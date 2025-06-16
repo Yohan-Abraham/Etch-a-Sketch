@@ -1,7 +1,9 @@
 const containter = document.querySelector(".container");
 
-const box = document.createElement("div");
-box.style.height = "16px";
-box.style.width = "16px";
-containter.appendChild(box);
+for (let i = 0; i < 256; i++) {
+
+    const box = document.createElement("div");
+    box.classList.add("box");
+    containter.appendChild(box);
+}
 
