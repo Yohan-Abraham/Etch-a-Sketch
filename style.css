@@ -1,7 +1,8 @@
 body {
     display: flex;
-    height: 256px;
-    width: 256px;
+    height: 900px;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {

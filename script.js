@@ -1,3 +1,9 @@
+const button = document.querySelector(".btn");
+
+
+
+
+
 const containter = document.querySelector(".container");
 
 for (let i = 0; i < 256; i++) {
@@ -7,3 +13,10 @@ for (let i = 0; i < 256; i++) {
     containter.appendChild(box);
 }
 
+const square = document.querySelectorAll(".box");
+
+square.forEach((box) => {
+    box.addEventListener("mouseover", () => {
+        box.style.backgroundColor = "blue";
+    });
+});
