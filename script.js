@@ -1,6 +1,6 @@
 const container = document.querySelector(".container");
 const button = document.querySelector("#btn");
-const CONTAINER_SIZE = 960;
+const CONTAINER_SIZE = 500;
 
 function generateGrid(size) {
     container.innerHTML = "";
@@ -13,7 +13,7 @@ function generateGrid(size) {
         box.style.width = `${boxSize}px`;
         box.style.height = `${boxSize}px`;
         box.addEventListener("mouseover", () => {
-            box.style.background = "red";
+            box.style.background = "grey";
         });
         container.appendChild(box);
     }
@@ -30,5 +30,6 @@ button.addEventListener("click", () => {
 
     generateGrid(newSize);
 });
+
 
 generateGrid(16);
