@@ -1,15 +1,20 @@
 body {
     display: flex;
+    flex-direction: column;
     height: 900px;
     justify-content: center;
     align-items: center;
 }
 
+#btn {
+    margin: 20px;
+}
+
 .container {
     display: flex;
     flex-wrap: wrap;
-    height: 256px;
-    width: 256px;
+    height: 900px;
+    width: 960px;
     margin: 0px;
 }
 
