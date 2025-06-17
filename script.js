@@ -12,8 +12,15 @@ function generateGrid(size) {
         box.classList.add("box");
         box.style.width = `${boxSize}px`;
         box.style.height = `${boxSize}px`;
+        box.dataset.opacity = 0;
         box.addEventListener("mouseover", () => {
-            box.style.background = "grey";
+            let currentOpacity = parseInt(box.dataset.opacity);
+            if (currentOpacity < 100) {
+                currentOpacity += 10;
+                box.dataset.opacity = currentOpacity;
+                box.style.opacity = currentOpacity / 100;
+            }
+            box.style.background = `rgb(${(Math.floor(Math.random() * 226))}, ${(Math.floor(Math.random() * 226))}, ${(Math.floor(Math.random() * 226))})`;
         });
         container.appendChild(box);
     }
